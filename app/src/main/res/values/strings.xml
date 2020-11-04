@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FingerprintDemo</string>
+    <string name="fingerprint_prompt_title">Authentication</string>
+    <string name="fingerprint_prompt_subtitle">Fingerprint Authentication</string>
+    <string name="fingerprint_prompt_description">Please tap your finger on the fingerprint sensor.</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="bio_autn_error_hw_unavailable">No authentication hardware is available.</string>
+    <string name="unknown_error">An unknown error occurred!</string>
+    <string name="bio_autn_error_unsupported_os_ver">Fingerprint authentication is not supported in this OS version.</string>
+    <string name="bio_autn_error_no_hardware">No fingerprint authentication hardware is available.</string>
+    <string name="bio_autn_error_none_enrolled">No fingerprint is enrolled.</string>
+    <string name="fingerprint_auth_failed">Fingerprint authentication failed.</string>
+    <string name="fingerprint_auth_error">An error occurred during fingerprint authentication: %s</string>
+    <string name="help_tip">Help Tip: %s</string>
+    <string name="welcome_to_SecondActivity">Welcome to SecondActivity</string>
+    <string name="perform_auth">Perform Authentication</string>
+</resources>
