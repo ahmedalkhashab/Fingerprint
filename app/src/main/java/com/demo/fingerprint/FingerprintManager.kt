@@ -113,15 +113,16 @@ class FingerprintManager(private val activity: FragmentActivity) {
         override fun onAuthSucceeded(result: BioAuthnResult) {
             super.onAuthSucceeded(result)
             Log.d(TAG, "onAuthSucceeded --> Result: $result")
+            
             activity.runOnUiThread {
                 mResultListener?.onSuccess()
-            }
 
-            /**
-             *  In EMUI 9.x or earlier, fingerprint authentication may work once only.
-             *  To solve this problem we recreate the UI after authentication is completed.
-             */
-            activity.recreate()
+                /**
+                 *  In EMUI 9.x or earlier, fingerprint authentication may work once only.
+                 *  To solve this problem we recreate the UI after authentication is completed.
+                 */
+                activity.recreate()
+            }
         }
     }
 
