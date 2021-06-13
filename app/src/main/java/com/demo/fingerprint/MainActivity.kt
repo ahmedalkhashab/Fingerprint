@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.demo.fingerprint.location.activity.LocationMainActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -43,7 +44,7 @@ class MainActivity : AppCompatActivity() {
 
         override fun onSuccess() {
             Log.d(TAG, "mAuthCallback --> onSuccess")
-            val intent = Intent(applicationContext, SecondActivity::class.java)
+            val intent = Intent(applicationContext, LocationMainActivity::class.java)
             startActivity(intent)
         }
 
