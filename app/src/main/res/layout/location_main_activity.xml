@@ -6,6 +6,7 @@
 
 
     <Button
+        android:visibility="gone"
         android:id="@+id/geo_fance_location"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -37,6 +38,7 @@
         android:layout_height="wrap_content"
         android:onClick="setMockLocation"
         android:text="@string/mock_location"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -50,6 +52,7 @@
         android:layout_height="wrap_content"
         android:onClick="setMockMode"
         android:text="@string/mock_mode"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -58,6 +61,7 @@
         app:layout_constraintVertical_bias="0.052"></Button>
 
     <Button
+        android:visibility="gone"
         android:id="@+id/locationHD"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -85,6 +89,7 @@
 
 
     <Button
+        android:visibility="gone"
         android:id="@+id/locationAvailability"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -98,6 +103,7 @@
         app:layout_constraintVertical_bias="0.571"></Button>
 
     <Button
+        android:visibility="gone"
         android:id="@+id/location_activity_update"
         style="@style/ButtonStyle"
         android:text="@string/hwlocation_activity"
@@ -110,6 +116,7 @@
         app:layout_constraintVertical_bias="0.933" />
 
     <Button
+        android:visibility="gone"
         android:id="@+id/location_activity_transition_update"
         style="@style/ButtonStyle"
         android:onClick="locationTransitionUpdate"
