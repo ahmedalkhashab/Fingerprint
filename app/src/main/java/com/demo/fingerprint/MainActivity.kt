@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         buttonAuth.setOnClickListener {
             //Start fingerprint authentication by checking availability.
-            mFingerprintManager.isFingerprintAuthAvailable(mAvailabilityCallback)
+            mFingerprintManager.auth(mAuthCallback)
         }
     }
 

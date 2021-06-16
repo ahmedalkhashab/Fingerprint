@@ -35,9 +35,7 @@ class FingerprintManager(private val activity: FragmentActivity) {
         when (val result = mBioAuthnManager.canAuth()) {
             BIO_AUTHN_SUCCESS -> {
                 Log.d(TAG, "isFingerprintAuthAvailable --> BIO_AUTHN_SUCCESS")
-                activity.runOnUiThread {
-                    resultListener.onSuccess()
-                }
+                mBioAuthnPrompt.auth(getPromptInfo())
             }
             BIO_AUTHN_ERROR_HW_UNAVAILABLE -> {
                 Log.d(TAG, "isFingerprintAuthAvailable --> BIO_AUTHN_ERROR_HW_UNAVAILABLE")
@@ -149,6 +147,6 @@ class FingerprintManager(private val activity: FragmentActivity) {
     //Perform fingerprint authentication
     fun auth(resultListener: ResultListener) {
         mResultListener = resultListener
-        mBioAuthnPrompt.auth(getPromptInfo())
+        isFingerprintAuthAvailable(resultListener)
     }
 }
